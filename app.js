@@ -106,4 +106,4 @@ app.post("/", upload.single("file-to-upload"), async (req, res) => {
   }
 });
 
-app.listen(2121);
+app.listen(process.env.PORT || 8000);
