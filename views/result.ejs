@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hot dog not hot dog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     
+        <% if(locals.count > 0) { %>
+            <img src='<%= img%>' alt='Hot dog'> 
+            <h1>Hot Dog</h1>
+        <% }else { %>
+            <img src='<%= img%>' alt='Not Hot dog'> 
+            <h1> Not Hot Dog </h1>
+        <% } %>
+ 
+    <form action="/" enctype="multipart/form-data" method="post">
+      <input type="file" name="file-to-upload">
+      <input type="submit" value="Upload">
+    </form>  
+  </body>
+</html>
